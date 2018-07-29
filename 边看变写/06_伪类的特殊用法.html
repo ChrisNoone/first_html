@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>伪类的特殊用法</title>
+    <style>
+        #d1 {
+            width: 300px;
+            height: 300px;
+            background-color: #00ff00;
+        }
+
+        #d1:hover h1 {
+            display: block;
+        }
+
+        #d1 h1 {
+            display: none;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: #0000ff;
+        }
+
+        #d2 #p2 {
+            display: none;
+        }
+
+        #p1:hover + #p2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">
+    <h1>伪类的特殊用法</h1>
+
+</div>
+<div id="d2">
+    <p id="p1">鼠标放在上面</p>
+    <p id="p2">下面显示</p>
+</div>
+</body>
+</html>

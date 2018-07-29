@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <style>
+        /*
+        后代选择器
+        */
+        #p1 h1 {
+            color: red;
+        }
+
+        /*
+        子选择器
+        */
+        div > h1 {
+            color: green;
+        }
+
+        /*
+        相邻选择器：相邻的下一个兄弟
+        */
+        div + h1 {
+            color: blue;
+        }
+
+        /*
+        普通兄弟选择器：后面的所有兄弟
+        */
+        div ~ h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1>第零层</h1>
+<div id="p1">
+    <h1>第一层</h1>
+</div>
+<h1>第二层</h1>
+<h1>第三层</h1>
+</body>
+</html>

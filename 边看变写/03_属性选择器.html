@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        p[name] {
+            color: red;
+        }
+
+        /*
+        属性选择器扩展用法
+        1.[属性名称=属性值] - 属性值与元素中指定属性的值完全一致；
+        2.[属性名称^=属性值] - 表示属性值是以什么开始的；
+        3.[属性名称$=属性值] - 表示属性值是以什么结束的；
+        4.[属性名称*=属性值] - 表示属性值包含什么的；
+        */
+        [name="p2"] {
+            color: blue;
+        }
+
+        [name^="h"] {
+            color: yellow;
+        }
+
+        [class~="cls3"] {
+            color: green;
+        }
+
+        [class|="cls4"] {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1" class="cls">p1</p>
+    <p name="p2" class="cls">p2</p>
+    <p id="p3" name="p3">p3</p>
+    <p id="p4" name="p4" class="cls">p4</p>
+    <h1 name="h1">属性选择器</h1>
+    <h1 class="cls1 cls2 cls3">波浪号属性选择器</h1>
+    <h1 class="cls4-test">竖线属性选择器</h1>
+</div>
+</body>
+</html>
