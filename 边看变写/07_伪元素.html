@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style>
+        #p1::before {
+            content: "<<"
+        }
+
+        #p2::after {
+            content: ">>";
+        }
+
+        /*
+            content：before和after的属性值
+            content可以有四种类型属性值：none、normal、text、capture
+         */
+
+        #p3::first-letter {
+            font-size: 60px;
+        }
+
+        #p4::first-line {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1">伪元素before</p>
+    <p id="p2">伪元素after</p>
+    <p id="p3">伪元素first-letter</p>
+    <!-- 输入 “Lorem”，按Tab键 -->
+    <p id="p4">伪元素first-line Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores,
+        consequatur delectus eos error esse, fuga fugiat libero modi, provident quae sequi! Error est excepturi illum
+        laborum nam sit
+        voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae corporis dolore explicabo
+        fugit nam numquam odit officia perspiciatis temporibus! A excepturi libero nobis non rem sit suscipit ullam
+        voluptas.</p>
+    <p id="p5">伪元素selection</p>
+</div>
+</body>
+</html>
