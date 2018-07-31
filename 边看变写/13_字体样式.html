@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字体样式</title>
+    <style>
+        h1, p {
+            /*
+                字体系列：font-family
+                * 备选字体系列 - 用户电脑中已安装的字体
+                    问题 - 必须选择使用用户电脑中存在的字体系列
+                * 一次性指定多个字体系列，中间使用逗号分隔
+            */
+            font-family: 宋体, sans-serif;
+        }
+
+        #p2 {
+            /*
+                字体大小：font-size
+                * 像素值
+                * 百分值 - 相对于浏览器页面默认字体大小（16px）
+            */
+            font-size: 10px;
+        }
+
+        #p3 {
+            font-size: 150%;
+        }
+
+        #p4 {
+            /*
+                粗体：font-weight
+                * 绝对值 normal、bold
+                * 相对值 lighter、bolder
+                * 数字值 100、200、...、800、900（9个备选项）
+            */
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>字体系列</h1>
+    <p>宋体</p>
+    <hr>
+</div>
+<div>
+    <p id="p2">字体大小10px</p>
+    <p id="p3">字体大小百分比150%</p>
+</div>
+<div>
+    <p id="p4">加粗</p>
+</div>
+</body>
+</html>

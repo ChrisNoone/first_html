@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>颜色的命名</title>
+    <style>
+        /*
+            颜色的命名：
+            1、使用单词方式定义颜色 - 目前主流浏览器识别147种预定义颜色
+            2、使用RGB方式定义颜色
+                * RGB - red、green、blue. 三原色
+                * rgb(255, 255, 255)  值范围 0 - 255
+                * 十六进制  值范围 00 - FF
+        */
+        .p1 {
+            width: 200px;
+            background-color: rgb(0, 204, 51);
+        }
+
+        .p2 {
+            width: 200px;
+            background-color: #FFCC33;
+        }
+
+        /*
+            * 色调
+            * 饱和度：灰色含量
+            * 亮度：黑色含量
+            * 对比度：前景色和背景色的差异
+            * web安全色：目前基本具有216种
+        */
+
+        html, body {
+            background-color: darkcyan;
+        }
+
+        h1 {
+            color: lightcoral;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p class="p1">RGB颜色 <a target="_blank" href="http://www.bootcss.com/p/websafecolors/">(0, 204, 51)</a></p>
+    <p class="p2">RGB颜色 <a target="_blank" href="http://www.bootcss.com/p/websafecolors/">#FFCC33</a></p>
+</div>
+<div>
+    <h1>前景色与背景色</h1>
+</div>
+</body>
+</html>

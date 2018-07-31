@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>颜色与单位</title>
+    <style>
+        p {
+            background-color: hsla(270, 30%, 40%, 0.75);
+            /*
+                H - 色调 0-360
+                S - 饱和度 0%-100%
+                L - 亮度 0%-100%
+                A - 透明度 0-10
+            */
+        }
+
+        /*unit {
+        !*
+            单位 - 相对值
+            px：主流浏览器，默认字体大小为16px.（pc端用的较多）
+            em：相对父级元素的大小.（移动端用的较多）
+            ex：当前字体中相对小写“x”的高度.
+            百分值：相对于父级的，可能大于100%.
+         *!
+        }*/
+
+        /*#d2 {
+            color: lightcoral;
+            background-color: green;
+            opacity: 1.0;
+            !*
+                默认值为1.0，完全不透明
+                值为0，完全透明
+                同时改变前景色和背景色
+            *!
+        }*/
+
+        #d2 {
+            color: red;
+            /*
+                颜色的表示方式 - 除了有rgb()方式以外，还有rgba()方式
+                * rgba()中的 a 表示透明度
+            */
+            background-color: rgba(0, 0, 255, 1.0);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>颜色模式 - HSLA</p>
+</div>
+<div id="d2">
+    透明度
+</div>
+<div>
+    <h1 style="font-size: 3em">单位</h1>
+</div>
+</body>
+</html>
