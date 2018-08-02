@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style>
+        #p1 {
+            /*
+                text-decoration属性定义下划线、上划线、删除线、闪烁blink
+            */
+            /*text-decoration: underline line-through;*/
+            text-decoration-line: line-through;
+            text-decoration-color: red;
+            text-decoration-style: double; /* solid实线 double双实线 dashed虚线 */
+        }
+
+        span {
+            font-size: 20px;
+            /*
+                line-height属性：1.行间距；2.行高
+                行高可以实现垂直方向的居中效果
+            */
+            line-height: 50px;
+        }
+
+        .p1 {
+
+            letter-spacing: 5px;
+        }
+
+        .p2 {
+
+            word-spacing: 6px;
+        }
+
+        .p3 {
+            word-spacing: 30px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1">文本样式</p>
+    <hr>
+</div>
+<div>
+    <span>行间距</span>
+    <br>
+    <span>行间距</span>
+    <hr>
+</div>
+<div>
+    <p class="p1">letter spacing</p>
+    <p class="p2">word spacing</p>
+    <p class="p3">中文没效果</p>
+</div>
+</body>
+</html>

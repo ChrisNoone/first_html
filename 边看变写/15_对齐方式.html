@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对齐方式</title>
+    <style>
+        #p1 {
+            text-align: center;
+        }
+
+        #p2 {
+            text-align: right;
+        }
+
+        #p3 {
+            text-align: justify;
+        }
+
+        img {
+            /*
+                垂直方向对齐方式，默认为底部对齐
+                设置图片以什么方式与文字对齐
+                * top middle bottom
+            */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id="p1">居中对齐</p>
+    <p id="p2">右对齐</p>
+    <p id="p3">两端对齐<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequuntur corporis
+        delectus eius eos esse et illum ipsum laborum nam natus neque nihil officia perferendis, quam reiciendis
+        tempora. Ipsam,
+        praesentium?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur earum explicabo
+        facilis illo impedit ipsa iure natus necessitatibus, nemo nesciunt nihil non obcaecati perferendis placeat
+        praesentium, quis
+        sequi veritatis.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eius eos id ipsum
+        laborum maxime necessitatibus nisi optio, ratione repellendus veniam, vero? Nam numquam, perspiciatis rerum
+        saepe sit veritatis! Necessitatibus.</p>
+    <hr>
+</div>
+<div>
+    <p class="cls">Lorem ipsum <img src="source/frame_image.svg" alt=""> dolor sit amet, consectetur adipisicing elit.
+        Accusamus accusantium adipisci architecto eaque error laborum natus omnis quaerat quibusdam, quisquam rerum sed
+        unde? Dolorem ex nemo perferendis reiciendis, ut velit.</p>
+</div>
+</body>
+</html>

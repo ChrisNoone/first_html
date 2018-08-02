@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本换行</title>
+    <style>
+        p {
+            /*
+                * html的换行元素<br> - 人为换行，不拆分单词
+                * CSS的overflow-wrap - 强行拆分单词
+                word-wrap是微软的私有属性，在CSS3.0的文本规范中被重命名为overflow-wrap
+                word-wrap属性的值为normal和break-word
+            */
+            width: 200px;
+            height: 100px;
+            background-color: yellowgreen;
+            overflow-wrap: break-word;
+        }
+
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantiumsdfdadfasfadf architecto dicta dignissimos
+    distinctio ea,
+    error eum nulla odit pariatur quos sunt, tempore. Ad blanditiis fuga iusto nihil odio quis ut.</p>
+<p></p>
+</body>
+</html>

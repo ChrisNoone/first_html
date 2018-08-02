@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本缩进和阴影效果</title>
+    <style>
+        #p1 {
+            /*
+                * html中也有类似效果 - <blockquote>元素
+                * text-indent 首行缩进
+            */
+            text-indent: 50px;
+        }
+
+        .red-text-shadow {
+            font-size: 30px;
+            /*
+                设置文本阴影效果 - 关键参数（依次顺序为）
+                * 水平方向的偏移量 左和右
+                    * 向左 -
+                    * 向右 +
+                * 垂直方向的偏移量 上和下
+                    * 向上 -
+                    * 向下 +
+                * 模糊程度
+                * 颜色
+
+                注意：
+                * 水平方向和上下方向必须同时设置，可设置为0 - 表示不偏移
+            */
+            text-shadow: -5px 5px 2px red;
+        }
+    </style>
+</head>
+<body>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam consectetur cupiditate
+    eaque eum excepturi explicabo nam natus neque nesciunt, odit perferendis possimus quae quo quos rerum, totam,
+    veniam.</p>
+<hr>
+<p class="red-text-shadow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, amet eaque eius est
+    facere illo molestias odit officiis placeat quas quia quod sit. Adipisci autem eum ipsum laudantium pariatur.</p>
+</body>
+</html>

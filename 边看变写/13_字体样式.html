@@ -18,7 +18,7 @@
             /*
                 字体大小：font-size
                 * 像素值
-                * 百分值 - 相对于浏览器页面默认字体大小（16px）
+                * 百分值 - 200% 相对于浏览器页面默认字体大小（16px）
             */
             font-size: 10px;
         }
@@ -36,6 +36,21 @@
             */
             font-weight: 900;
         }
+
+        #p5 {
+            /*
+                斜体：font-style
+                * oblique italic 等
+            */
+            font-style: italic;
+        }
+
+        #p6 {
+            /*
+                定义样式的顺序是固定的，依次是：斜体、加粗、大小、字体
+            */
+            font: italic bold large Serif;
+        }
     </style>
 </head>
 <body>
@@ -50,6 +65,12 @@
 </div>
 <div>
     <p id="p4">加粗</p>
+</div>
+<div>
+    <p id="p5">斜体 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad corporis cumque deleniti distinctio dolores eligendi esse expedita facilis in incidunt iure nisi qui sapiente sed similique, velit veritatis voluptate voluptates!</p>
+</div>
+<div>
+    <p id="p6">font属性</p>
 </div>
 </body>
 </html>
