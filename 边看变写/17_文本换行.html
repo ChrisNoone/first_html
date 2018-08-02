@@ -9,7 +9,9 @@
                 * html的换行元素<br> - 人为换行，不拆分单词
                 * CSS的overflow-wrap - 强行拆分单词
                 word-wrap是微软的私有属性，在CSS3.0的文本规范中被重命名为overflow-wrap
-                word-wrap属性的值为normal和break-word
+                word-wrap属性的值
+                    * normal
+                    * break-word
             */
             width: 200px;
             height: 300px;
@@ -17,12 +19,31 @@
             overflow-wrap: break-word;
         }
 
+        .cls {
+            /*
+                word-break属性的值
+                * normal 默认
+                * break-all 也表示强行换行，将单词进行拆分
+                * keep-all 不允许拆分单词
+            */
+            width: 200px;
+            height: 300px;
+            background-color: yellow;
+            word-break: break-all;
+        }
     </style>
 </head>
 <body>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantiumsdfdadfasfadf architecto dicta dignissimos
-    distinctio ea,
-    error eum nulla odit pariatur quos sunt, tempore. Ad blanditiis fuga iusto nihil odio quis ut.</p>
-<p>https://github.com/NooneLiu/first_html/blob/master/%E8%BE%B9%E7%9C%8B%E5%8F%98%E5%86%99/17_%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C.html</p>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantiumsdfdadfasfadf architecto dicta dignissimos
+        distinctio ea,
+        error eum nulla odit pariatur quos sunt, tempore. Ad blanditiis fuga iusto nihil odio quis ut.</p>
+    <p>
+        https://github.com/NooneLiu/first_html/blob/master/%E8%BE%B9%E7%9C%8B%E5%8F%98%E5%86%99/17_%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C.html</p>
+</div>
+<div>
+    <p class="cls">
+        https://github.com/NooneLiu/first_html/blob/master/%E8%BE%B9%E7%9C%8B%E5%8F%98%E5%86%99/17_%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C.html</p>
+</div>
 </body>
 </html>

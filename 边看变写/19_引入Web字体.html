@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>引入Web字体</title>
+    <style>
+        /*
+            CSS3新增引入Web字体
+            * 在当前工程中，导入指定字体文件
+            * 当用户访问页面时，加载指定的字体文件
+            * 可以在HTML页面中使用指定的字体系列
+        */
+        @font-face {
+            /*
+                font-face是CSS的一种规则，用来引入Web字体
+                * 语法结构
+                  @font-face {
+                    font-family: 指定当前Web字体系列的名称
+                        * 尽量不用中文或空格
+                        * 尽量不与电脑已安装的字体系列名称相同
+                    src: 指定当前Web字体系列的文件路径
+                        * 在当前工程中的文件，使用相对路径
+                        * 使用第三方提供的文件，使用指定的文件路径
+                  }
+                  * 同时引入多个字体文件，多个字体文件之间用逗号分隔
+            */
+            font-family: abc;
+            src: url("source/font/菩提細明.ttf");
+            /*src: url("source/font/DFKTL1B/DFKTL1B.eot") format("eot"), url("source/font/DFKTL1B/DFKTL1B.woff") format("woff"), url("source/font/DFKTL1B/DFKTL1B.ttf") format("truetype"), url("source/font/DFKTL1B/DFKTL1B.svg") format("svg");*/
+        }
+
+        h1 {
+            font-family: abc;
+        }
+    </style>
+</head>
+<body>
+<h1>引入Web字体</h1>
+</body>
+</html>
