@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接元素</title>
+    <style></style>
+</head>
+<body>
+<div>
+    <!--
+        链接元素 <a>
+        * 属性
+            * href - 设置指定跳转html页面的路径
+                * 绝对路径
+                * 相对路径
+            * target - 表示当前链接的打开方式
+                * _self 默认值，在当前窗口（页签）中打开目标链接
+                * _blank 在新窗口（页签）中打开目标链接
+                * _top 在顶级窗口打开
+                * _parent 在父级窗口打开
+            * mailto - 实现Email链接效果
+                配合href使用，值是以“mailTo:”开头的
+            * 锚点 - href属性与其它元素的id属性配合使用，实现锚点效果
+                * 作为目标的元素不一定是<a>元素
+            * download属性 - 实现<a>元素下载功能，HTML5提供的
+                * 属性的值表示下载文件的名称，不一定是源文件的名称
+    -->
+    <div>
+        <a id="dy18" href="18_抖音风格字体.html">18_抖音风格字体.html</a>
+        <br>
+        <a href="source/css/mystyle.css" target="_blank">css文件</a>
+        <br>
+        <a href="mailTo:lv8023_chao@163.com">email</a>
+        <br>
+        <a href="#bottom">跳到最下面</a>
+        <hr>
+    </div>
+    <div>
+        <a href="source/img/roberto-nickson-g-366181-unsplash.jpg" download="美女.jpg">下载图片</a>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="bottom" href="#dy18">锚点 回到顶部</a>
+    <br><br>
+</div>
+</body>
+</html>

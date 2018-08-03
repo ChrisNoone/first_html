@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态伪类选择器</title>
+    <style>
+        a:link {
+            color: #00CC00;
+        }
+
+        a:hover {
+            color: #3300FF;
+        }
+
+        a:active {
+            color: #CC0000;
+        }
+
+        a:visited {
+            color: #000000;
+        }
+
+        input:focus {
+            border: 1px solid red;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--
+        动态伪类选择器
+        链接伪类选择器
+        * e:link 超链接未被访问过
+        * e:visited 超链接已被访问过
+        用户行为伪类选择器
+        * e;active 超链接被激活
+        * e:hover 用户鼠标悬停在链接文本上
+        * e:focus 超链接获得焦点
+    -->
+    <a href="http://www.baidu.com" target="_blank">百度一下</a>
+</div>
+<div>
+    <input type="text">
+</div>
+</body>
+</html>
