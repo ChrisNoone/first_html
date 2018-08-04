@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵图</title>
+    <style>
+        #div0 {
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+        }
+
+        #div1 {
+            width: 25px;
+            height: 25px;
+            position: static;
+            top: 0px;
+            left: 0px;
+            border: 1px solid black;
+            background-image: url("source/img/28jlt.png");
+            background-repeat: no-repeat;
+            background-position: 1px 1px;
+        }
+
+        #div2 {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            border: 1px solid black;
+            background: url("source/img/28jlt.png") no-repeat 3px -45px;
+        }
+    </style>
+</head>
+<body>
+<div id="div0">
+    <div id="div1"></div>
+    <div id="div2"></div>
+</div>
+</body>
+</html>

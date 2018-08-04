@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景图像的设置</title>
+    <style>
+        div {
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+            background-image: url("source/img/Oliver.jpg");
+            /*
+                * background-repeat属性
+                    * repeat 默认值，重复
+                    * no-repeat 不重复
+                    * repeat-x 水平方向重复
+                    * repeat-y 垂直方向重复
+                    * space
+                    * round
+            */
+            background-repeat: no-repeat;
+            /*
+                * background-position属性，背景图像的定位
+                    * 水平方向，left、center、right
+                    * 垂直方向，top、center、bottom
+                    * 像素显示法 先水平 后垂直
+                    * 百分比显示法
+            */
+            background-position: 50px 100px;
+            /*
+                * background-size属性，设置图像的大小
+                    分别设置宽度和高度
+            */
+            background-size: 300px 400px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
