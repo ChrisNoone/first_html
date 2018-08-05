@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        a {
+            text-decoration: none;
+            color: green;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            cursor: help;
+        }
+    </style>
+</head>
+<body>
+<p>有序列表</p>
+<div>
+    <!--
+        ol的私有属性
+        * start 序号的开始值，number类型
+        * type 属性值可以是1、A、a、I、i
+    -->
+    <ol start="8" type="1">
+        <!--
+            li的私有属性
+            * value
+            * type
+        -->
+        <li>人类</li>
+        <li value="20">动物</li>
+        <li>植物</li>
+    </ol>
+</div>
+<hr>
+<p>无序列表</p>
+<div>
+    <!--
+        ul的私有属性
+        * type属性，表示无序列表的符号类型
+            * circle - 空心圆
+            * disc - 默认值，实心圆
+            * square - 实心方形
+    -->
+    <ul type="square">
+        <li>中国</li>
+        <li>美国</li>
+        <li>俄国</li>
+    </ul>
+</div>
+<hr>
+<p>嵌套列表</p>
+<div>
+    <ol>
+        <li>字体
+            <ul type="disc">
+                <li><a href="13_字体样式.html">字体样式</a></li>
+                <li><a href="14_文本样式.html">文本样式</a></li>
+                <li><a href="17_文本换行.html">文本换行</a></li>
+            </ul>
+        </li>
+        <li>链接
+            <ul>
+                <li><a href="21_链接元素.html">链接元素</a></li>
+                <li><a href="22_链接元素的样式.html">链接元素的样式</a></li>
+                <li><a href="23_动态伪类选择器.html">动态伪类选择器</a></li>
+            </ul>
+        </li>
+        <li>背景
+            <ol>
+                <li><a href="25_背景图像.html">背景图像</a></li>
+                <li><a href="26_背景图像的设置.html">背景图像的设置</a></li>
+                <li><a href="27_背景图像关联.html">背景图像关联</a></li>
+            </ol>
+        </li>
+    </ol>
+</div>
+</body>
+</html>

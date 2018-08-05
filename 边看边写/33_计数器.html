@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+    <style>
+        /*
+            使用 counter-reset 属性进行计数器的充值
+            * 必须使用另外两个样式属性使用
+                1.counter-increment
+                2.counter()函数或counters()函数
+        */
+        #ol_1 {
+            counter-reset: section; /* 计数器重置为0 */
+            list-style-type: none;
+        }
+
+        #ol_1 li::before {
+            counter-increment: section; /* 默认累加值为1 */
+            content: counter(section) ".";
+        }
+
+        ul {
+            list-style-type: none;
+            counter-reset: html_list;
+        }
+
+        #ul_1 li::before {
+            counter-increment: html_list;
+            content: counters(html_list, ".") ". ";
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ol id="ol_1">
+        <li>人类</li>
+        <li>动物</li>
+        <li>植物</li>
+    </ol>
+</div>
+<hr>
+<div>
+    <ul id="ul_1">
+        <li>链接
+            <ul>
+                <li>链接元素.html</li>
+                <li>链接元素的样式.html</li>
+                <li>动态伪类选择器.html</li>
+            </ul>
+        </li>
+        <li>图像
+            <ul>
+                <li>背景图像.html</li>
+                <li>背景图像的设置.html</li>
+                <li>精灵图.html</li>
+            </ul>
+        </li>
+        <li>列表
+            <ul>
+                <li>定义列表.html</li>
+                <li>列表符号的样式.html
+                    <ul>
+                        <li>list-style-type</li>
+                        <li>list-style-image</li>
+                        <li>list-style-position</li>
+                    </ul>
+                </li>
+                <li>计数器.html
+                    <ul>
+                        <li>counter()</li>
+                        <li>counters()</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
