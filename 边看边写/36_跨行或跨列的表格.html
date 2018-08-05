@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨行或跨列的表格</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<table border="1">
+    <caption>员工登记表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>职业</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <!--
+            colspan属性，表示跨行，属性值表示跨几行
+            rowspan属性，表示跨列，属性值表示跨几列
+                * colspan和rowspan是单元格的属性
+                * 跨行时，被占行的单元格要去掉一个
+                * 跨列时，被占列的单元格要去掉一个
+        -->
+        <td rowspan="2">张国荣</td>
+        <td colspan="2">26</td>
+        <!--<td>测试工程师</td>-->
+    </tr>
+    <tr>
+        <!--<td>易烊千玺</td>-->
+        <td>27</td>
+        <td>设计师</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+</body>
+</html>

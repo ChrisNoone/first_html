@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格元素</title>
+    <style>
+        .cls {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h3>表格</h3>
+    <!--
+        <table>元素 - 表示表格（需要有行和列），表格是一种容器元素
+            * border属性，表示表格的边框，属性值表示边框的宽度（<table>和<td>都具有边框）
+            * 表格的默认宽度由所有的单元格之和决定
+    -->
+    <table border="1">
+        <!--
+            <tr>元素 - 表示表格中的行
+        -->
+        <tr>
+            <!--
+                <td>元素 - 表示表格中的单元格
+            -->
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>职业</td>
+        </tr>
+        <tr>
+            <td>张国荣</td>
+            <td>26</td>
+            <td>测试</td>
+        </tr>
+        <tr>
+            <td>易烊千玺</td>
+            <td>27</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<hr>
+<h3>带表头的表格</h3>
+<div>
+    <table border="1">
+        <tr>
+            <!--
+                <th>元素 - 表示表格中的表头
+                * 表头的文本内容字体加粗
+                * 表头的文本内容居中显示
+            -->
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+        </tr>
+        <tr>
+            <td>张国荣</td>
+            <td>26</td>
+            <td>测试工程师</td>
+        </tr>
+        <tr>
+            <td>易烊千玺</td>
+            <td>27</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<hr>
+<h3>带标题的表格</h3>
+<div class="cls">
+    <table border="1">
+        <caption>员工登记表</caption>
+        <tr>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>职业</th>
+        </tr>
+        <tr>
+            <td>张国荣</td>
+            <td>26</td>
+            <td>测试工程师</td>
+        </tr>
+        <tr>
+            <td>易烊千玺</td>
+            <td>27</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

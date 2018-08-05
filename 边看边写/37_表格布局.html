@@ -1,0 +1,42 @@
+<!DCOTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格布局</title>
+    <style>
+        table {
+            /*
+                table-layout属性表示布局（页面加载时，以哪种方式进行加载）
+                 * auto 自动计算表格的宽度和高度（由单元格的内容决定），这种方式是大多数主流浏览器默认采用的方式，加载速度慢
+                 * fixed 只加载首行单元格的宽度（除首行之外的单元格不影响表单的宽度），加载速度相对快
+            */
+            table-layout: fixed;
+        }
+    </style>
+</head>
+<body>
+<table border="1">
+    <caption>员工登记表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>职业</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张国荣</td>
+        <td>26</td>
+        <td>测试工程师</td>
+    </tr>
+    <tr>
+        <td>易烊千玺</td>
+        <td>27</td>
+        <td>设计师</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+</body>
+</html>
