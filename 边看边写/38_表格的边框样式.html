@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的边框样式</title>
+    <style>
+        table, th, td {
+            /*
+                border属性，设置边框
+                * border-width 设置边框的宽度
+                * border-style 设置边框的样式
+                * border-color 设置边框的颜色
+            */
+            border: 1px solid black;
+            /*
+                border-collapse属性，设置表格、单元格的边框是分离的还是合并的
+                * separate 默认值，表示分离
+                    * 分离状态下，边框之间距离由 border-spacing 属性来确定
+                * collapse 表示合并
+            */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>员工登记表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>职业</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张国荣</td>
+        <td>26</td>
+        <td>测试工程师</td>
+    </tr>
+    <tr>
+        <td>易烊千玺</td>
+        <td>27</td>
+        <td>设计师</td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+</body>
+</html>

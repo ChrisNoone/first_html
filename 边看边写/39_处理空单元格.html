@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>处理空单元格</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            /*
+                border-collapse属性的值为separate时，empty-cells才有效
+            */
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>员工登记表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>职业</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张国荣</td>
+        <td>26</td>
+        <td>测试工程师</td>
+    </tr>
+    <tr>
+        <td>易烊千玺</td>
+        <td>27</td>
+        <td></td>
+    </tr>
+    </tbody>
+    <tfoot></tfoot>
+</table>
+</body>
+</html>
