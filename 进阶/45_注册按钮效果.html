@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册按钮效果</title>
+    <style>
+        a {
+            /* 设置为行内块级元素 */
+            display: inline-block;
+            /* 设置背景图像 */
+            background: url("source/img/btn.png") no-repeat;
+            /* 设置每个按钮的宽度和高度 */
+            width: 161px;
+            height: 40px;
+            /* 使用行高，调整文字居中效果 */
+            line-height: 40px;
+            /* 先让文字居中显示 */
+            text-align: center;
+            /* 修改链接的默认效果 */
+            color: #ffffff;
+            text-decoration: none;
+            /* 空白处理 */
+            white-space: pre-wrap;
+        }
+
+        #phone {
+            background-position: -310px -461px;
+        }
+
+        #weibo {
+            background-position: -1px -601px;
+        }
+        #qq {
+            background-position: -1px -651px;
+        }
+        #wechat {
+            background-position: -213px -1191px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a id="phone" href="#">  手机注册</a>
+    <a id="weibo" href="#">     新浪微博注册</a>
+    <a id="qq" href="#">    腾信QQ注册</a>
+    <a id="wechat" href="#">  微信注册</a>
+</div>
+</body>
+</html>
