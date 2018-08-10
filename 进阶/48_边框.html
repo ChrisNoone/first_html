@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            /*
+                border属性 - 表示边框
+                * 核心要素
+                    * 边框的宽度，默认值为1px
+                    * 边框的样式，必须直接给定（不能默认）
+                    * 边框的颜色，默认值为黑色（black）
+                * 显示效果 - 同时设置上、下、左、右4个方向的边框
+                * border属性可拆分成以下3个属性
+                    * border-width
+                    * border-style
+                    * border-color
+                * 还可将border属性按4个方位拆分成以下4个属性
+                    * border-top
+                    * border-right
+                    * border-bottom
+                    * border-left
+            */
+            border: 10px solid black;
+        }
+
+        .cls {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            border-top: 5px solid black;
+            border-right: 10px double gray;
+            border-bottom: 20px dashed green;
+            border-left: 30px dotted yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<hr>
+<div class="cls"></div>
+</body>
+</html>

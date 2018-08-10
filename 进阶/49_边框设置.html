@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框设置</title>
+    <style>
+        #d1 {
+            width: 0px;
+            height: 0px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: white white white black;
+        }
+
+        #d2 {
+            /*
+                边框的圆角
+            */
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            border-radius: 50px;
+        }
+
+        img {
+            /*
+                边框的圆角
+            */
+            width: 200px;
+            height: 200px;
+            background-color: darkgreen;
+            border-radius: 100px;
+        }
+
+        /*
+            border-image属性，设置边框图像
+        */
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<hr>
+<div id="d2"></div>
+<hr>
+<img src="source/img/a.jpg" alt="">
+</body>
+</html>

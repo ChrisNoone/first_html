@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        /*
+            每个元素都可以当做一个盒子，都具有以下4个概念：
+            * 外边距（margin），两个元素边框之间的距离
+            * 边框（border）
+            * 内边距（padding），内容区至边框的距离
+            * 内容区（content）
+        */
+        #d1 {
+            width: 200px;
+            height: 200px;
+            /*
+                元素占页面空间的大小
+                * 实际宽度 = width + padding-left + padding-right + border-left + padding-right
+                * 实际高度 = height + padding-top + padding-bottom + border-top + border-bottom
+            */
+            background-color: lightgreen;
+            padding: 50px;
+            margin: 50px;
+            border: 10px solid black;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">
+    <div id="d2"></div>
+</div>
+</body>
+</html>
