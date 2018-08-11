@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三种类型元素的盒子模型</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 50px;
+            margin: 50px;
+        }
+
+        #s1 {
+            display: none;
+        }
+
+        #ds:hover #s1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            /*
+                * 水平方向的内边距有效的 - 控制文本内容在水平方向的位置
+                * 垂直方向的内边距有效的 - 文本内容的位置没有变化，内边距向上和向下进行扩展
+            */
+            padding: 30px;
+            /*
+                * 垂直方向的外边距无效的 - 上外边距和下外边距
+                * 水平方向的外边距有效的 - 左外边距和右外边距
+            */
+            margin: 30px;
+
+            display: inline;
+        }
+
+        .i-b {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 30px;
+            margin: 20px;
+        }
+
+        #d2 {
+            background-color: red;
+        }
+
+        #d3 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<p>块级元素</p>
+<div class="container">
+    <div id="d1"></div>
+</div>
+<hr>
+<p>内联元素（需要将鼠标放在框内看效果）</p>
+<div id="ds" class="container">
+    <span id="s1">内联元素</span>
+</div>
+<hr>
+<p>行内块级元素</p>
+<div class="container">
+    <div id="d2" class="i-b"></div>
+    <div id="d3" class="i-b"></div>
+</div>
+</body>
+</html>

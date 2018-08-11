@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>外边距重叠</title>
+    <style>
+        /*
+            * 外边距重叠的问题只在上下外边距中出现，左右外边距中不会出现
+            * 在本例中，处理上下外边距重叠问题，可以单独设置下外边距为300px，或者单独设置上外边距为300px
+        */
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #d1 {
+            background-color: green;
+            margin-bottom: 100px;
+        }
+
+        #d2 {
+            background-color: blue;
+            margin-top: 200px;
+        }
+
+        #d3 {
+            background-color: red;
+            display: inline-block;
+            margin-right: 100px;
+        }
+
+        #d4 {
+            background-color: yellow;
+            display: inline-block;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+<hr>
+<div id="d3"></div>
+<div id="d4"></div>
+</body>
+</html>
