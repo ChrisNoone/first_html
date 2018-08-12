@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块级元素的浮动</title>
+    <style>
+        div {
+            background-color: lightcoral;
+            /*
+                块级元素默认的宽度和高度
+                * 宽度是父级元素的100%
+                * 高度是 0 或者所有后台元素高度之和
+            */
+
+            /*width: 100%;*/
+
+            /*
+                块级元素设置为浮动后
+                * 宽度默认是 0 或者所有后代元素宽度之和 或者所有后台元素高度之和
+                * 高度是 0
+
+                多个块级元素都设置为浮动后，垂直方向排列变为水平方向排列，如果占满父级元素宽度的100%后，会自动换行
+            */
+            float: left;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

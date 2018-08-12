@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>行内块级元素的浮动</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            /*
+                行内块级元素设置为浮动后
+                * 元素之间的空白间隙被去掉
+            */
+            float: left;
+        }
+
+        #d1 {
+            background-color: lightcoral;
+        }
+
+        #d2 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+</body>
+</html>

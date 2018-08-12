@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联元素的浮动</title>
+    <style>
+        span {
+            /*
+                内联元素的默认宽度和高度
+                * 宽度是内容的宽度，width属性是无效的
+                * 高度是内容的高度，wheight属性是无效的
+            */
+            background-color: lightcoral;
+            /*
+                内联元素设置为浮动后
+                * width 属性和 height 属性生效
+                * 多个内联元素之间依旧是水平方向排列
+            */
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<span>内联元素的浮动</span>
+<span>多个内联元素</span>
+</body>
+</html>
