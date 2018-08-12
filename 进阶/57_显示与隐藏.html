@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示与隐藏</title>
+    <style>
+        .container {
+            display: inline-block;
+            width: 500px;
+            height: 800px;
+            border: 1px solid black;
+        }
+
+        div [id] {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        #dd1 {
+            background-color: lightgreen;
+        }
+
+        #dd2 {
+            background-color: lightcoral;
+        }
+
+        .container:hover #dd2 {
+            display: none;
+        }
+
+        #dd3 {
+            background-color: lightskyblue;
+        }
+
+        #dd4 {
+            background-color: lightgreen;
+        }
+
+        #dd5 {
+            background-color: lightcoral;
+        }
+
+        .container:hover #dd5 {
+            /*
+                visibility属性
+                * visible - 显示
+            */
+            visibility: hidden;
+        }
+
+        #dd6 {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<div id="d1" class="container">
+    <p>display属性</p>
+    <div id="dd1"></div>
+    <div id="dd2"></div>
+    <div id="dd3"></div>
+</div>
+<div id="d2" class="container">
+    <p>visibility属性</p>
+    <div id="dd4"></div>
+    <div id="dd5"></div>
+    <div id="dd6"></div>
+</div>
+</body>
+</html>

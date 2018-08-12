@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型的类型</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+            padding: 50px;
+            margin: 50px;
+        }
+
+        #d1 {
+            /*
+                content-box - 默认值，标准盒子模型
+            */
+            box-sizing: content-box;
+            background-color: green;
+        }
+
+        #d2 {
+            /*
+                border-box - 怪异盒子模型，CSS3支持
+                * 实际宽度 = width
+                * 实际高度 = height
+                * 盒子是向内扩张的
+            */
+            box-sizing: border-box;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<hr>
+<div id="d2"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容溢出</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            /*
+                overflow属性
+                * visible - 默认值，内容不被修剪，会显示在父级容器之外
+                * hidden - 内容会被修剪，并且其余内容不可见
+                * scroll - 内容会被修剪，显示滚动条（会始终显示滚动条）
+                * auto - 由浏览器决定，如果内容被修剪，就会显示滚动条
+            */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div>Loremqwwwwwww ipsum dolor sit amet, consectetur adipisicing elit. Animi cumque cupiditate ducimus
+    enim eum exercitationem
+    id in inventore magnam pariatur sapiente,ullam. Deserunt incidunt ipsum laboriosam perferendis repudiandae tenetur
+    voluptatibus?
+</div>
+</body>
+</html>
