@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本与浮动的元素</title>
+    <style>
+        div {
+            width: 600px;
+            height: 800px;
+            border: 1px solid black;
+        }
+
+        div div {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--
+        文本内容与浮动元素之间
+        * 文本内容不会被浮动的圆度所覆盖，而是环绕在浮动元素周围
+    -->
+    <div></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum ea, est, facere facilis fuga incidunt
+        ipsam
+        laudantium molestiae nesciunt nihil obcaecati omnis pariatur perferendis praesentium quisquam reprehenderit,
+        sit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda debitis fuga hic impedit
+        laboriosam
+        laudantium maxime tempore voluptatem! Aut cumque laborum nam, nisi placeat quae quia sint vero. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Amet asperiores blanditiis consequatur cum, dolorem earum
+        explicabo in nesciunt ratione voluptatibus! Fuga, quis tempora. Adipisci doloremque eius eligendi itaque minima,
+        quibusdam.</p>
+</div>
+</body>
+</html>
