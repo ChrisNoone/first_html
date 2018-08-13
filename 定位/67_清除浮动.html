@@ -48,9 +48,9 @@
             /*
                 利用container元素，前后的伪元素来做清除浮动
             */
-            overflow: hidden;
-            display: table;
-            visibility: hidden;
+            overflow: hidden; /* 内容修剪，超出部分不可见 */
+            display: table; /* 类似<table>元素 */
+            visibility: hidden; /* 隐藏 */
             content: '';
             clear: both;
         }
