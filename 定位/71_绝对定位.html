@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            /*
+                position属性，属性值设置为 absolute 开启绝对定位
+                * 效果同开启浮动，width 和 height 都默认变成0
+                * 开启定位后，还得设置偏移量，元素位置才会有变化
+            */
+            position: absolute;
+            /*
+                设置定位偏移量
+                * top
+                * left
+            */
+            top: 10%;
+            left: -20px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

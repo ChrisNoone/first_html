@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷</title>
+    <style>
+        .parent {
+            /*
+                高度塌陷
+                * 出现情景
+                    * 父级元素与子级元素
+                    * 父级元素为设置高度
+                    * 子级元素设置为浮动
+                * 解决办法（开启BFC环境）
+                    * 父级设置为浮动（当前元素脱离了文档流）
+                    * 父级设置为 inline-block
+                    * 设置 overflow 不为 visible
+            */
+            border: 5px solid black;
+            /*float: left;*/
+            /*display: inline-block;*/
+            overflow: hidden;
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child"></div>
+</div>
+</body>
+</html>
