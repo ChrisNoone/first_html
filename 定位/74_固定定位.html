@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            /*
+                固定定位，相对于页面窗口的定位
+            */
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            position: absolute;
+            top: 400px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">d1相对定位</div>
+<div id="d2">d2绝对定位</div>
+</body>
+</html>

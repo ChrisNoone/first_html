@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <title>注册按钮效果</title>
     <style>
-        div {
+        body {
+            height: 2000px;
+            margin: 0;
+        }
+
+        .foot {
+            width: 100%;
+            /*
+                .container 脱离文档流以后，margin就无效了，所以就不能再用 margin 做居中效果了
+            */
+            /*margin: 0 auto;*/
+            position: fixed;
+            bottom: 0;
+            padding: 20px 0;
+        }
+
+        .bg {
+            width: 100%;
+            height: 32px;
+            background-image: url("source/img/shadow.png");
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 80px;
+        }
+
+        .container {
             width: 659px;
             margin: 0 auto;
         }
@@ -61,13 +86,14 @@
     </style>
 </head>
 <body>
-<footer>
-    <div>
+<div class="foot">
+    <div class="bg"></div>
+    <div class="container">
         <a id="phone" href="#">手机注册</a>
         <a id="weibo" href="#">新浪微博注册</a>
         <a id="qq" href="#">腾信QQ注册</a>
         <a id="wechat" href="#">微信注册</a>
     </div>
-</footer>
+</div>
 </body>
 </html>
