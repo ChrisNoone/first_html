@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>文本与浮动的元素</title>
     <style>
-        div {
-            width: 600px;
-            height: 800px;
+        .container {
+            width: 400px;
+            height: 500px;
             border: 1px solid black;
         }
 
-        div div {
+        .container div {
             width: 200px;
             height: 200px;
             background-color: lightcoral;
@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-<div>
+<div class="container">
     <!--
         文本内容与浮动元素之间
         * 文本内容不会被浮动的元素所覆盖，而是环绕在浮动元素周围
