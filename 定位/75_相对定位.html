@@ -2,32 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>固定定位</title>
+    <title>相对定位</title>
     <style>
-        body {
-            margin: 0;
-            height: 2000px;
-        }
-
         #d1 {
             width: 200px;
             height: 200px;
             background-color: lightcoral;
-            /*
-                固定定位，相对于页面窗口的定位
-            */
-            position: absolute;
-            top: 100px;
-            left: 100px;
+            margin: 0;
         }
 
         #d2 {
             width: 100px;
             height: 100px;
             background-color: lightgreen;
-            position: fixed;
-            top: 100px;
-            left: 100px;
+            /*
+                相对定位是相对于自身元素原来位置的定位
+            */
+            position: relative;
+            margin-left: 50px;
+            left:100px;
         }
     </style>
 </head>
