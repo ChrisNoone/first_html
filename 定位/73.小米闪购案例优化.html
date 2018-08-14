@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米闪购案例</title>
+    <style>
+        .container {
+            width: 1226px;
+            height: 340px;
+            margin: 0 auto;
+        }
+
+        .container  > div {
+            width: 234px;
+            height: 340px;
+            float: left;
+            margin-left: 14px;
+            /*background-color: rgba(0,0,0,0.03);*/
+        }
+
+        .container > div:first-child {
+            background-color: #f1eded;
+            margin-left: 0;
+        }
+
+        .box1 {
+            border-top: 1px solid #e53935;
+        }
+
+        .box2 {
+            border-top: 1px solid #ffac13;
+        }
+
+        .box3 {
+            border-top: 1px solid #83c44c;
+        }
+
+        .box4 {
+            border-top: 1px solid #2196f3;
+        }
+
+        .box5 {
+            border-top: 1px solid #e53935;
+        }
+
+        img {
+            width: 160px;
+            height: 166px;
+            margin: 20px 37px 37px 37px;
+            display: block;
+        }
+
+        .title {
+            font-size: 14px;
+            font-weight: 400;
+            white-space: nowrap;
+            color: #212121;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 12px;
+            white-space: nowrap;
+            color: #b0b0b0;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 14px;
+            white-space: nowrap;
+            color: #b0b0b0;
+            text-align: center;
+        }
+
+        .bg {
+            /*
+                此处不能使用float属性，因为图片内容和文本内容不能被浮动元素所覆盖
+            */
+            position: absolute;
+            width: 234px;
+            height: 340px;
+            background-color: rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">
+        <div class="bg"></div>
+    </div>
+    <div class="box2">
+        <div class="bg"></div>
+        <img src="source/img/287594eb-b765-8db1-3255-0a05c4c07440.jpg" alt="#">
+        <p class="title">小米二合一数据线30cm 白色</p>
+        <p class="desc">两种接口，支持多种设备</p>
+        <p class="price">
+            <span>19.9元</span>
+        </p>
+    </div>
+    <div class="box3">
+        <div class="bg"></div>
+        <img src="source/img/761af25d-aebe-7568-dc6d-08e0690d69d2.png" alt="#">
+        <p></p>
+        <p></p>
+    </div>
+    <div class="box4">
+        <div class="bg"></div>
+        <img src="source/img/991fad3a-93d2-d905-047d-794718156a6a.jpg" alt="#">
+        <p></p>
+        <p></p>
+    </div>
+    <div class="box5">
+        <div class="bg"></div>
+        <img src="source/img/0894c83821ea157b25b6129aaa488c1d.jpg" alt="#">
+        <p></p>
+        <p></p>
+    </div>
+</div>
+</body>
+</html>
