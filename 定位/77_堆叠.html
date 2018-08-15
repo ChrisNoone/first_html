@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>堆叠</title>
+    <style>
+        body {
+            margin: 0;
+            height: 1500px;
+        }
+
+        #d1 {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            position: absolute;
+            left: 100px;
+            top: 400px;
+            /*
+                z-index属性，值大的在上边
+                * 必须是当前元素开启定位时才可用
+            */
+            z-index: 2;
+        }
+
+        #d2 {
+            width: 200px;
+            height: 200px;
+            background-color: lightskyblue;
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<div id="d2"></div>
+</body>
+</html>
