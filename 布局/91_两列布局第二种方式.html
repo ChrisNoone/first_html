@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局第二种方式</title>
+    <!--
+        定宽 + 自适应
+    -->
+    <style>
+        .left, .right {
+            height: 300px;
+        }
+
+        .left {
+            width: 300px;
+            background-color: lightcoral;
+            float: left;
+            position: relative;  /* 开启定位是为了避免右边覆盖左边，定位的层级结构要高于浮动 */
+        }
+
+        .right_container {
+            float: right;
+            width: 100%;
+            margin-left: -300px;
+            background-color: blue;
+        }
+
+        .right {
+            background-color: lightgray;
+            margin-left: 300px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 300px;
+            background-color: lightgreen;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="left">左列定宽</div>
+<div class="right_container">
+    <div class="right">
+        <div class="inner"></div>
+    </div>
+</div>
+</body>
+</html>

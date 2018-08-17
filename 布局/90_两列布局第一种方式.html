@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局第一种方式</title>
+    <!--
+        定宽 + 自适应
+    -->
+    <style>
+        .left, .right {
+            height: 300px;
+        }
+
+        .left {
+            width: 300px;
+            background-color: lightcoral;
+            float: left;
+        }
+
+        .right {
+            background-color: lightgray;
+            margin-left: 300px;
+        }
+
+        .inner {
+            width: 100%;
+            height: 300px;
+            background-color: lightgreen;
+            /*clear: both;*/
+        }
+    </style>
+</head>
+<body>
+<div class="left">左列定宽</div>
+<div class="right">
+    <div class="inner">
+        * 问题：如果为作为右边自适应列的子级元素设置清除浮动，作为子级的元素会显示在当前列的下方<br>
+        * 解决办法：<a href="91_两列布局第二种方式.html" style="text-decoration: none">91_两列布局第二种方式.html</a>
+    </div>
+</div>
+</body>
+</html>

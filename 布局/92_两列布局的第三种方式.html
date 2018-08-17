@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局的第三种方式</title>
+    <style>
+        .left, .right {
+            height: 300px;
+        }
+
+        .left {
+            width: 300px;
+            background-color: lightcoral;
+            float: left;
+        }
+
+        .right {
+            background-color: lightgray;
+            overflow: hidden;  /* 开启BFC模式，当前元素的内部环境就是与外界完全隔离的环境 */
+        }
+
+        .inner {
+            width: 100%;
+            height: 300px;
+            background-color: lightgreen;
+            /*clear: both;*/
+        }
+    </style>
+</head>
+<body>
+<div class="left">左列定宽</div>
+<div class="right">
+    <div class="inner">
+        * 使用overflow开启BFC模式，比前两种都要简单，但也有缺点<br>
+        * 缺点：
+    </div>
+</div>
+</body>
+</html>
