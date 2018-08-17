@@ -10,16 +10,15 @@
 
         .container {
             position: relative; /* 实现子级元素相对于当前元素定位 */
-            width: 500px; /* 设置一个默认宽度，使一个可视窗口就是显示一张图片 */
+            width: 500px; /* 设置一个默认宽度，使一个可视窗口只显示一张图片 */
             height: 333px; /* 设置默认高度，解决高度塌陷问题，不能使用overflow属性解决高度塌陷问题是因为子级元素也没有高度，父级元素会认为子级元素的内容高度都是溢出的部分 */
-            /*border: 1px solid black; !* 静态演示用的边框 *!*/
             overflow: hidden; /* 解决内容溢出，只显示一张图片，其余图片隐藏 */
             margin: 20px auto; /* 可视窗口水平居中，.container用的是相对定位，没有脱离文档流BFC，所以是可以使用margin进行居中效果实现的 */
             border-radius: 10px;
         }
 
         .container .img-list {
-            width: 2500px; /* 设置默认宽度，是子级的<img>一行显示 */
+            width: 2500px; /* 设置默认宽度，使子级的<img>一行显示 */
             position: absolute; /* 相对于父级元素定位 */
             overflow: hidden; /* 解决高度塌陷 */
             left: -2000px; /* 控制图片容器的位置，以做到图片切换的效果 */
@@ -27,7 +26,7 @@
 
         .container .img-list img {
             width: 500px;
-            float: left; /* 设置为浮动，是图片与图片之间无间隙 */
+            float: left; /* 设置为浮动，使图片与图片之间无间隙 */
         }
 
         .container:hover {

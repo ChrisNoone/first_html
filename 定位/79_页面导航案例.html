@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面导航案例</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .head {
+            width: 100%;
+            height: 80px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 4px 2px -3px rgba(0,0,0,.2);
+        }
+
+        .head > .container {
+            min-width: 1200px;
+            height: 80px;
+            margin: 0 40px;
+        }
+
+        .left_container {
+            /*width: 80px;*/
+            /*height: 80px;*/
+            background-image: url("source/img/dedao_logo.png");
+            background-size: 60px 60px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            float: left;
+        }
+
+        .left_container > a {
+            width: 80px;
+            height: 80px;
+            display: block;
+        }
+
+        .left_container > a:hover {
+            cursor: pointer;
+        }
+
+        .right_container {
+            /*width: 443.58px;*/
+            /*height: 80px;*/
+            float: right;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .right_container > ul {
+            height: 80px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            margin: 23px 0 23px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Microsoft YaHei,PingFangSC-Regular,PingHei,Helvetica,STHeiTi,Arial,sans-serif;
+            color: #333;
+        }
+
+        .right_container > ul > li:first-child {
+            margin-left: 0;
+            border-bottom: 2px solid #ff6b00;
+        }
+
+        li:hover {
+            color: #ff6b00;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header class="head">
+    <!-- 实现水平居中效果的容器 -->
+        <div class="container">
+            <div class="left_container">
+                <a href="https://www.igetget.com/" target="_blank"></a>
+            </div>
+            <div class="right_container">
+                <ul>
+                    <li>首页</li>
+                    <li>知识就是力量</li>
+                    <li>新闻报道</li>
+                    <li>APP 下载</li>
+                    <li>企业服务</li>
+                </ul>
+            </div>
+        </div>
+</header>
+</body>
+</html>

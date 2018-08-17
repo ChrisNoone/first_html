@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静态效果实现轮播图静态效果</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 500px;
+            height: 333px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px gray;
+            overflow: hidden;
+        }
+
+        .container .img-list {
+            width: 2500px;
+            position: relative;
+            left: 0;
+        }
+
+        .container .img-list img {
+            width: 500px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<!-- 将当前<div>元素当做可视窗口 -->
+<div class="container">
+    <!-- 将当前<div>元素当做是图片容器 -->
+    <div class="img-list">
+        <!-- 罗列轮播图所需所有的图片 -->
+        <img src="source/img/1.jpg" alt="">
+        <img src="source/img/2.jpg" alt="">
+        <img src="source/img/3.jpg" alt="">
+        <img src="source/img/4.jpg" alt="">
+        <img src="source/img/5.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>
