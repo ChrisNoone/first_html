@@ -1,0 +1,76 @@
+1.水平方向居中
+  a.text-align + inline-block 组合实现水平方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .parent {
+        text-align: center;
+      }
+      .child {
+        display: inline-block;
+      }
+    * 问题
+      * 由于使用text-align属性，是继承属性，导致child元素的文本内容也实现水平居中
+      * 由于使用inline-block值，导致存在行内块级元素的问题（* child元素之间有间隙 * child元素是以文本方式对齐）
+
+  b.table + margin 组合实现水平方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .child {
+        display: table;  /* 或者 block 值 */
+        margin: 0 auto;
+      }
+    * 问题
+      * 当前实现水平方向居中的元素不能脱离文档流
+      * 当前实现水平方向居中的元素的宽度不能使父级元素宽度的100%
+
+  c.absolute + transform 组合实现水平方向居中
+    第一种情况 - 父级元素不是<body>
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .parent {
+        position: relative;  /* 开启定位 */
+      }
+      .child {
+        position: absolute;  /* 绝对定位 */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    第二种情况 - 父级元素是<body>
+    * HTML代码
+      <body>
+        <div class="child"></div>
+      </body>
+    * CSS代码
+      .child {
+        position: absolute;  /* 绝对定位 */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    * 问题
+      * 如果父级元素不是<body>，必须要为父级元素开启定位
+      * .child元素开启定位，脱离文档流
+      * transform是CSS3新增属性
+
+  d.relative + transform 组合实现水平方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .child {
+        position: relative;  /* 绝对定位 */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    * 优势
+      * 与当前元素的父级元素样式没有任何关系
+      * 当前元素不用脱离文档流
