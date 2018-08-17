@@ -1,0 +1,48 @@
+2.垂直方向居中
+  a.table-cell + vertical-align 组合实现垂直方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .parent {
+        display: table-cell;  /* 相当于<td>元素 */
+        vertical-align: middle;
+      }
+    * 问题
+      * 实现垂直方向居中的元素，为其父级元素设置相应的样式属性
+      * 父级元素的高不能是实现垂直方向居中元素的高度
+
+  b.absolute + transform 组合实现垂直方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .parent {
+        position: relative;  /* 开启定位 */
+      }
+      .child {
+        position: absolute;  /* 绝对定位 */
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    * 问题
+      * 如果父级元素不是<body>，必须要为父级元素开启定位
+      * .child元素开启定位，脱离文档流
+      * transform是CSS3新增属性
+
+  c.relative + transform 组合实现水平方向居中
+    * HTML代码
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    * CSS代码
+      .child {
+        position: relative;  /* 绝对定位 */
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    * 优势
+      * 与当前元素的父级元素样式没有任何关系
+      * 当前元素不用脱离文档流
