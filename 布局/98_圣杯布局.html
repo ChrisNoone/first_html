@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+    <style>
+        .container > div {
+            float: left;
+            height: 600px;
+        }
+
+        .container {
+            margin-left: 200px;
+            margin-right: 300px;
+            /*
+                存在高度塌陷问题
+            */
+        }
+
+        .center {
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        .left {
+            width: 200px;
+            margin-left: -100%;
+            background-color: lightcoral;
+
+            position: relative;
+            left: -200px;
+        }
+
+        .right {
+            width: 300px;
+            margin-left: -300px;
+            background-color: lightgreen;
+
+            position: relative;
+            right: -300px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="center"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局中间自适应第一种方式</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            height: 600px;
+        }
+
+        .left {
+            width: 200px;
+            background-color: lightcoral;
+            float: left;
+        }
+
+        .right {
+            width: 200px;
+            background-color: lightgreen;
+            float: right;
+        }
+
+        .center {
+            background-color: gray;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        /*
+            存在问题：
+            * 中间自适应的左右外边距需要根据左右两个列的宽度调整
+            * 如果中间自适应的列，有子级元素实现清除浮动，会改变整体布局
+            * 元素编写的顺序与页面显示的顺序不符
+        */
+    </style>
+</head>
+<body>
+<div class="left"></div>
+<div class="right"></div>
+<div class="center"></div>
+</body>
+</html>

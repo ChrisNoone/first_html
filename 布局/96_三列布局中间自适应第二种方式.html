@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局中间自适应第二种方式</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            height: 600px;
+        }
+
+        .left {
+            width: 200px;
+            background-color: lightcoral;
+            float: left;
+        }
+
+        .center {
+            width: 100%;
+            margin-left: 200px;
+            margin-right: 300px;
+            background-color: gray;
+        }
+
+        .right {
+            width: 300px;
+            float: right;
+            margin-top: -600px;
+
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="left"></div>
+<div class="center"></div>
+<div class="right"></div>
+</body>
+</html>

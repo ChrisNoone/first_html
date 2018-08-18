@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        body > div {
+            height: 600px;
+            float: left;
+        }
+
+        .center {
+            width: 100%;
+            background-color: lightgray;
+        }
+
+        .left {
+            width: 200px;
+            background-color: lightcoral;
+            /*
+                左列 - 左浮动，设置左外边距 margin-left 为负值，控制自己向左移动100%，与 center 在同一列，在左边
+            */
+            margin-left: -100%;
+        }
+
+        .right {
+            width: 300px;
+            background-color: lightgreen;
+            /*
+                右列 - 左浮动，设置左外边距 margin-left 为负值，控制自己向左移动自身宽度，与 center 在同一列，在右边
+            */
+            margin-left: -300px;
+        }
+
+        .inner {
+            height: 300px;
+            /*
+                添加一个子级元素，设置左右压缩量
+            */
+            margin-left: 200px;
+            margin-right: 300px;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <div class="inner"></div>
+</div>
+<div class="left"></div>
+<div class="right"></div>
+</body>
+</html>
