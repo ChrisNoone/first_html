@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双列布局案例</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: lightgray;
+        }
+
+        .container {
+            width: 60%;
+            background-color: transparent;
+            margin: 50px auto 0;
+        }
+
+        .container .left {
+            float: left;
+            background-color: #FFFFFF;
+        }
+
+        .container .right {
+            height: 800px;
+            overflow: hidden;
+            margin-left: 230px;
+            background-color: #FFFFFF;
+        }
+
+        .left img {
+            width: 200px;
+            display: block;
+        }
+
+        .left p {
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            box-sizing: border-box;
+            padding-left:20px;
+            margin: 0;
+            font-size: 20px;
+            background-color: #FFCC33;
+        }
+
+        .left > div {
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <img src="source/img/logo.jpg" alt="#">
+        <p>双列布局</p>
+        <div></div>
+    </div>
+    <div class="right"></div>
+</div>
+</body>
+</html>
