@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等分布局</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 1040px;
+        }
+
+        .col_list {
+            width: 1050px;
+            height: 600px;
+            white-space: nowrap;
+            position: relative;
+            left: -10px;
+        }
+
+        .col_list > div {
+            width: 200px;
+            height: 600px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .col_list > div:first-child {
+        }
+
+        .col1 {
+            background-color: #FF0000;
+        }
+
+        .col2 {
+            background-color: #CC00FF;
+        }
+
+        .col3 {
+            background-color: #33CC33;
+        }
+
+        .col4 {
+            background-color: #999999;
+        }
+
+        .col5 {
+            background-color: #0033CC;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col_list">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <div class="col4"></div>
+        <div class="col5"></div>
+    </div>
+</div>
+</body>
+</html>
