@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件域</title>
+    <style>
+        form > input:first-child {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<form action="#">
+    <!--
+        <input type="file">表示文件域（单文件域）
+        * 允许用户在页面中选择本地文件
+        * 默认读取所有类型的文件
+            * multiple - 表示多文件域
+            * accept - 设置当前允许接受的文件类型
+        MIME类型 - 表示文件类型
+            * image/png - 前缀表示文件类型，后缀是扩展名称
+            * image/jpg
+            * text/html
+    -->
+    <input type="file" accept="image/png" multiple>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
