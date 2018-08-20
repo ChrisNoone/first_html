@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build a Tribute Page</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            min-width: 800px;
+            height: 46px;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 10px lightgray;
+            overflow: hidden;
+        }
+
+        .logo {
+            height: 23px;
+            float: left;
+            margin-left: 20px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        header div {
+            width: 342px;
+            height: 46px;
+            float: right;
+            margin-right: 20px;
+        }
+
+        header div nav {
+            height: 46px;
+            margin-right: 10px;
+            color: gray;
+            font-size: 18px;
+            font-weight: 500;
+            float: left;
+        }
+
+        nav .tab {
+            margin-left: 20px;
+            line-height: 46px;
+            float: left;
+        }
+
+        nav .tab:first-child {
+            margin-left: 0;
+        }
+
+        .avatar {
+            height: 46px;
+            float: right;
+        }
+
+        main {
+            width: 100%;
+            height: 700px;
+        }
+
+        main div {
+            display: inline-block;
+            margin: 0;
+        }
+
+        main .container_left {
+            width: 35%;
+            min-width: 450px;
+            height: 680px;
+            position: absolute;
+            top: 66px;
+            box-sizing: border-box;
+            padding-right: 20px;
+        }
+
+        main .container_right {
+            width: 65%;
+            height: 680px;
+            position: absolute;
+            top: 66px;
+            right: 0;
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
+
+        .container_left h4 {
+            font-size: 22px;
+            font-family: '微软雅黑', 'Lato', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        .container_left ol {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .left_table {
+            width: 100%;
+            padding: 10px 0 0;
+            display: table;
+            table-layout: fixed;
+        }
+
+        .ch_box {
+            width: 50px;
+            padding-left: 25px;
+            display: table-cell;
+            box-sizing: border-box;
+        }
+
+        .text_box {
+            display: table-cell;
+            word-break: break-all;
+        }
+
+        .text_box li {
+            margin-left: 25px;
+        }
+
+        main a {
+            color: #00BB00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main a:hover {
+            color: #009933;
+            text-decoration: underline;
+        }
+
+        .container_right img {
+            width: 70%;
+            position: absolute;
+            left: 50%;
+            top: 66px;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img class="logo" src="source/img/logo-navbar.png" alt="#">
+    <div>
+        <nav>
+            <span class="tab">首页</span>
+            <span class="tab">课程</span>
+            <span class="tab">聊天室</span>
+            <span class="tab">关于</span>
+            <span class="tab">[127]</span>
+        </nav>
+        <img class="avatar" src="source/img/34369438.png" alt="#">
+    </div>
+</header>
+<main>
+    <div class="container_left">
+        <h4>Build a Tribute Page</h4>
+        <hr>
+        <ol>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>每个诗人心中都有自己的致橡树，by 舒婷。</strong>
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>每个程序猿心中都有自己的偶像，写一个致敬页来向自己的偶像致敬。
+                        </strong>
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>当你看不到右边的视频时，说明你还身处防火墙中，赶紧翻墙去体验<a href="http://www.baidu.com" target="_blank">自由无阻碍的互联网</a>。</li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>如果你还不明白翻墙对个人成长的重要性，请去看电影<a
+                            href="http://huluoyang.github.io/2016/02/25/the-shawshank-redemption/" target="_blank">《肖申克的救赎》</a>。
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>目标:</strong>
+                        设计一个类似于:
+                        <a href="https://codepen.io/FreeCodeCamp/full/NNvBQW/" target="_bank">https://codepen.io/FreeCodeCamp/full/NNvBQW/</a>的页面。
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>规则1:</strong>
+                        代码是开源的，你可以借鉴，但请不要抄袭。
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>规则2:</strong>
+                        用你喜爱的任何库来定制属于你自己的风格，实现下面的功能
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>功能1:</strong>
+                        你可以用图片和文本来实现这个致敬页面。
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>
+                        <strong>功能2:</strong>
+                        你可以点击链接穿越到另一个网站，获得关于这个主题的更多信息。
+                    </li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>当你遇到困难的时候，记得查看错误提示、阅读文档、搜索、提问。</li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>当你完成了这个项目，请点击 "我已经完成了这个挑战" 按钮，输入你的项目在CodePen上的链接。</li>
+                </div>
+            </div>
+            <div class="left_table">
+                <div class="ch_box">
+                    <input type="checkbox">
+                </div>
+                <div class="text_box">
+                    <li>你可以分享这个项目给<a href="jin@freecodecamp.cn" target="_blank">JackJin</a>或<a href="#" target="_blank">聊天室</a>来获得反馈。
+                    </li>
+                </div>
+            </div>
+        </ol>
+    </div>
+    <div class="container_right">
+        <img src="source/img/555549162.webp" alt="#">
+    </div>
+</main>
+</body>
+</html>
