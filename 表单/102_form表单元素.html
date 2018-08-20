@@ -12,7 +12,13 @@
     <form>元素 - 表示表单
     * action属性 - 设置指定服务器端的地址路径
     * <form>只是一个容器（包含表单的组件）
+    * enctype属性 - 设置提交表单时，数据内容的MIME类型
+        * application/x-www-form-urlencoded - 默认值
+        * multipart/form-data - 实现文件上传功能
 -->
-<form action="#"></form>
+<form action="#" method="POST" enctype="multipart/form-data">
+    <input type="file" name="myfile">
+    <input type="submit" value="提交">
+</form>
 </body>
 </html>
